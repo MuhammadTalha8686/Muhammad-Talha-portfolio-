@@ -52,6 +52,24 @@ nav a:hover {
   border: 2px solid #a83232;
   box-shadow: 0 0 25px rgba(180, 30, 30, 0.45);
   flex-shrink: 0;
+      @keyframes cinematicFade {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  animation: cinematicFade 1.2s ease forwards;
+}
+
+.profile-pic {
+  animation: cinematicFade 1.5s ease forwards;
+}
     }
     .tag { color: #63e6be; letter-spacing: 3px; }
      h1 {
