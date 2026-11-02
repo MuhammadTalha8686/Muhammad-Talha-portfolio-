@@ -116,11 +116,19 @@ nav a:hover {
 }
     h2 { font-size: 32px; margin-bottom: 18px; }
     .card {
-      background: #151c30;
-      border: 1px solid #293047;
-      border-radius: 14px;
-      padding: 24px;
-      margin-top: 15px;
+  background: linear-gradient(145deg, #171010, #0c0c0c);
+  border: 1px solid #4a171b;
+  border-radius: 14px;
+  padding: 24px;
+  margin-top: 15px;
+  box-shadow: 0 8px 25px rgba(180, 30, 30, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(180, 30, 30, 0.25);
+}
     }
     .skills { display: flex; flex-wrap: wrap; gap: 12px; }
     .skills span {
